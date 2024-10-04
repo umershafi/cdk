@@ -1,0 +1,29 @@
+@url = https://gt8ny6mpgf.execute-api.us-west-1.amazonaws.com/prod/
+
+GET {{url}}/spaces
+###
+
+POST https://gt8ny6mpgf.execute-api.us-west-1.amazonaws.com/prod/spaces
+content-type: application/json
+
+{
+  "location": "Paris",
+  "name": "Best location"
+}
+###
+
+GET https://gt8ny6mpgf.execute-api.us-west-1.amazonaws.com/prod/spaces?id=651a8c09-86d5-4f9a-85f1-5956c79ce0be
+content-type: application/json
+###
+
+DELETE https://gt8ny6mpgf.execute-api.us-west-1.amazonaws.com/prod/spaces?id=651a8c09-86d5-4f9a-85f1-5956c79ce0be
+content-type: application/json
+###
+
+PUT https://gt8ny6mpgf.execute-api.us-west-1.amazonaws.com/prod/spaces?id=41f1af43-2361-4963-9dda-b6bff8a43af3
+content-type: application/json
+
+{
+  "name": "Best location 5"
+}
+###
